@@ -1,0 +1,10 @@
+.catalogContainer{
+    max-width: 1150px;
+    margin: 5rem auto;
+    padding: 0 20px;
+}
+
+.slideItemCatalog {
+    margin: 0;
+    margin-bottom: 1rem;
+}

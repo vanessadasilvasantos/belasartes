@@ -1,0 +1,21 @@
+.sink {
+    margin-top: 5%;
+    width: 90%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.workContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    border: 5px solid var(--color-lightGray);
+    filter: 0.65;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.titleWork {
+    color: var(--color-emphasis);
+}

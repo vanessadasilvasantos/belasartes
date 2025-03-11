@@ -1,0 +1,42 @@
+.home {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    padding: 0 1rem;
+    margin: auto;
+}
+
+.homeContainer {
+    box-shadow: inset 0 -2.5rem var(--color-white);
+    background: var(--color-black);
+}
+
+.homeImage {
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 920px) {
+    .homeImage {
+        max-width: 20rem;
+        margin-top: 2rem;
+    }
+    .home {
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width: 840px) {
+    .home {
+        flex-wrap: wrap;
+    }
+    .homeImage {
+        max-width: 100%;
+        margin-top: 2rem;
+        height: 300px;
+    }
+}

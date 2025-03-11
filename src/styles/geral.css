@@ -1,0 +1,88 @@
+:root {
+    --color-black: #121212;
+    --color-footer: #000000;
+    --color-white: #ffffff;
+    --color-lightGray: #a6a6a6;
+    --color-darkGray: #676666;
+    --color-emphasis: #ff6600;
+    --color-emphasis2: #FF3502;
+    --text-geral: 'Poppins';
+}
+
+
+body {
+    margin: 0;
+    font-family: var(--text-geral);
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.titleWhite {
+    color: var(--color-white);
+}
+
+.titleBlack {
+    color: var(--color-black);
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-right: 2rem;
+    line-height: 4rem;
+}
+
+.title span {
+    color: var(--color-emphasis);
+}
+
+.subTitle {
+    color: var(--color-lightGray);
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.textFooter {
+    color: var(--color-emphasis);
+}
+
+@media(max-width: 1186px) {
+    .title {
+        font-size: 3rem; 
+        line-height: 3rem;  
+    }
+}
+
+@media (max-width: 920px) {
+    .title {
+        font-size: 2.5rem; 
+        line-height: 2.5rem;
+        margin-top: .8rem; 
+    }
+    .subTitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .title {
+        font-size: 2rem; 
+        line-height: 2rem;  
+        margin-bottom: .5rem;
+    }
+    .subTitle {
+        margin-bottom: 1.5rem;
+        text-transform: none;
+    }
+}

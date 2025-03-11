@@ -1,34 +1,57 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import { useRef } from 'react';
+import Header from './components/header/header';
+import Home from './components/home/home';
+import About from './components/about/about';
+import Materials from './components/materials/materials';
+import WorksList from './components/works/worksList';
+import Footer from './components/footer/footer';
+import { HashRouter as Router, Routes, Route, useNavigate} from 'react-router';
+import Catalog from './pages/catalog/Catalog';
+import HomeImage from './assets/home.png'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const sectionRefs = {
+    materials: useRef(null),
+    work: useRef(null),
+    contact: useRef(null),
+    about: useRef(null)
+  }
 
+  const navigate = useNavigate()
+  const handleClickCatalog =()=>{
+      navigate('../../catalog')
+  }
+
+  const scrollToTarget =(section)=> {
+    sectionRefs[section].current.scrollIntoView({ behavior: 'smooth'})
+  } 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <Routes>
+        <Route path='/' element={
+          <>
+            <Header 
+            about={()=> scrollToTarget('about')} 
+            materials={()=> scrollToTarget('materials')}
+            work={()=> scrollToTarget('work')}
+            contact={()=> scrollToTarget('contact')}
+            title1='Quem somos' title2='materiais' title3='trabalhos'/>
+
+            <Home
+            title='Transforme seus sonhos em realidade'
+            subTitle1='Tenha sua casa do jeito que '
+            subTitle2='sempre sonhou!' textButton='escolha o seu material'
+            onClick={handleClickCatalog} image={HomeImage}/>
+            
+            <About ref={sectionRefs.about}/>
+            <Materials ref={sectionRefs.materials}/>
+            <WorksList ref={sectionRefs.work}/>
+            <Footer ref={sectionRefs.contact}/>
+          </>
+        }/>
+        <Route path='/catalog' element={<Catalog />} />
+      </Routes>
   )
 }
 

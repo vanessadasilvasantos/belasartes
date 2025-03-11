@@ -1,0 +1,9 @@
+.marbleContainer {
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: .1rem;
+}
+
+.marble {
+    background-color: var(--color-black);
+}

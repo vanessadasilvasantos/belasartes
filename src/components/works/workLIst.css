@@ -1,0 +1,28 @@
+.worksContainer{
+    max-width: 1150px;
+    margin: 5rem auto;
+    padding: 0 20px;
+}
+
+.swiperContainer {
+    display: flex;
+    margin: 5rem auto;
+    max-width: 70%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .slideItem {
+     display: flex;
+     cursor: grabbing;
+     max-width:80%;
+     justify-content: center;
+     margin: 1rem;
+ }
+ 
+ @media (max-width: 920px) {
+     .swiperContainer {
+         margin: 1rem auto;
+     }
+ }

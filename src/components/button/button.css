@@ -1,0 +1,11 @@
+.button {
+    color: var(--color-black);
+    font-size: .8rem;
+    font-family: var(--text-geral);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: .8rem 1.2rem;
+    background: var(--color-emphasis);
+    border: none;
+    border-radius: 4px;
+}
