@@ -19,3 +19,16 @@
 .titleWork {
     color: var(--color-emphasis);
 }
+
+@media (max-width: 600px) {
+    .workContainer {
+        margin: 0px;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 530px) {
+    .titleWork {
+        font-size: .7rem;
+    }
+}

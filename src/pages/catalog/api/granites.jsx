@@ -27,7 +27,7 @@ const listCatalog = [
     {id: '6', image: AmareloIcarai, text: 'Amarelo Icaraí'},
     {id: '7', image: BrancoMarfim, text: 'Branco Marfim'},
     {id: '8', image: BrancoPolar, text: 'Branco Polar'},
-    {id: '9', image: BrancoPitaya, text: 'Branco Piatya'},
+    {id: '9', image: BrancoPitaya, text: 'Branco Pitaya'},
     {id: '10', image: OcreItabira, text: 'Ocre Itabira'},
     {id: '11', image: CafeImperial, text: 'Café Imperial'},
     {id: '12', image: VerdePerola, text: 'Verde Pérola'},
