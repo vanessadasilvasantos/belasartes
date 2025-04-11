@@ -1,12 +1,40 @@
-# React + Vite
+<h2 align='center'>Belas Artes</h2>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🎯 Sobre o projeto
 
-Currently, two official plugins are available:
+Esse projeto é uma landing page, com ctálogo e apresentação da marmoraria Belas Artes!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💻 Tecnologias
 
-## Expanding the ESLint configuration
+* [React.js](https://react.dev/)
+*  [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎨 Layout
+
+Você pode acessar o layout do projeto [aqui.](https://www.figma.com/design/LQFCyBjGeVGdaP1UpSpCPV/Untitled?t=k5oLgjU3hlMmWEys-0)
+
+# Instalação
+
+Clone este repositório do projeto
+
+```sh 
+git clone https://github.com/vanessadasilvasantos/belasartes.git
+```
+
+Entre na pasta `belasartes`
+
+```sh 
+cd belasartes
+```
+
+## Instale as dependências
+
+```sh 
+npm install
+```
+
+# Comece sua jornada na Belas Artes
+
+```sh 
+npm run dev
+```
